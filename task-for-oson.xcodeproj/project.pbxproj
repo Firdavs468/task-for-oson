@@ -13,6 +13,8 @@
 		04BAD7F52A2104D10062BA70 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04BAD7F32A2104D10062BA70 /* Main.storyboard */; };
 		04BAD7F72A2104D20062BA70 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04BAD7F62A2104D20062BA70 /* Assets.xcassets */; };
 		04BAD7FA2A2104D20062BA70 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04BAD7F82A2104D20062BA70 /* LaunchScreen.storyboard */; };
+		04BAD8052A2105170062BA70 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BAD8042A2105170062BA70 /* Model.swift */; };
+		AA789E707FE2E306ED020D20 /* Pods_task_for_oson.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DA9E91EB99E9237470D9775 /* Pods_task_for_oson.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,10 @@
 		04BAD7F62A2104D20062BA70 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04BAD7F92A2104D20062BA70 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04BAD7FB2A2104D20062BA70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04BAD8042A2105170062BA70 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		4DA9E91EB99E9237470D9775 /* Pods_task_for_oson.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_task_for_oson.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		69AB6EB7DA24602D4C1238AD /* Pods-task-for-oson.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-task-for-oson.release.xcconfig"; path = "Target Support Files/Pods-task-for-oson/Pods-task-for-oson.release.xcconfig"; sourceTree = "<group>"; };
+		6E913D05175E871EE10318FC /* Pods-task-for-oson.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-task-for-oson.debug.xcconfig"; path = "Target Support Files/Pods-task-for-oson/Pods-task-for-oson.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA789E707FE2E306ED020D20 /* Pods_task_for_oson.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +49,8 @@
 			children = (
 				04BAD7EC2A2104D10062BA70 /* task-for-oson */,
 				04BAD7EB2A2104D10062BA70 /* Products */,
+				CD96D39F1E5D34443916E89F /* Pods */,
+				148A2971423E92A9F0EA94C7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +65,57 @@
 		04BAD7EC2A2104D10062BA70 /* task-for-oson */ = {
 			isa = PBXGroup;
 			children = (
+				04BAD8012A2104E90062BA70 /* Model */,
+				04BAD8022A2104ED0062BA70 /* View */,
+				04BAD8032A2104F70062BA70 /* Attribute */,
 				04BAD7ED2A2104D10062BA70 /* AppDelegate.swift */,
 				04BAD7EF2A2104D10062BA70 /* SceneDelegate.swift */,
-				04BAD7F12A2104D10062BA70 /* ViewController.swift */,
 				04BAD7F32A2104D10062BA70 /* Main.storyboard */,
-				04BAD7F62A2104D20062BA70 /* Assets.xcassets */,
 				04BAD7F82A2104D20062BA70 /* LaunchScreen.storyboard */,
 				04BAD7FB2A2104D20062BA70 /* Info.plist */,
 			);
 			path = "task-for-oson";
+			sourceTree = "<group>";
+		};
+		04BAD8012A2104E90062BA70 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				04BAD8042A2105170062BA70 /* Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		04BAD8022A2104ED0062BA70 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				04BAD7F12A2104D10062BA70 /* ViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		04BAD8032A2104F70062BA70 /* Attribute */ = {
+			isa = PBXGroup;
+			children = (
+				04BAD7F62A2104D20062BA70 /* Assets.xcassets */,
+			);
+			path = Attribute;
+			sourceTree = "<group>";
+		};
+		148A2971423E92A9F0EA94C7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4DA9E91EB99E9237470D9775 /* Pods_task_for_oson.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CD96D39F1E5D34443916E89F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6E913D05175E871EE10318FC /* Pods-task-for-oson.debug.xcconfig */,
+				69AB6EB7DA24602D4C1238AD /* Pods-task-for-oson.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +125,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 04BAD7FE2A2104D20062BA70 /* Build configuration list for PBXNativeTarget "task-for-oson" */;
 			buildPhases = (
+				B426FC6464CAEC5A13FAA211 /* [CP] Check Pods Manifest.lock */,
 				04BAD7E62A2104D10062BA70 /* Sources */,
 				04BAD7E72A2104D10062BA70 /* Frameworks */,
 				04BAD7E82A2104D10062BA70 /* Resources */,
+				EA70AA0CD869306C5A013A08 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,6 +186,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		B426FC6464CAEC5A13FAA211 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-task-for-oson-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EA70AA0CD869306C5A013A08 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-task-for-oson/Pods-task-for-oson-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-task-for-oson/Pods-task-for-oson-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-task-for-oson/Pods-task-for-oson-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		04BAD7E62A2104D10062BA70 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -141,6 +236,7 @@
 				04BAD7F22A2104D10062BA70 /* ViewController.swift in Sources */,
 				04BAD7EE2A2104D10062BA70 /* AppDelegate.swift in Sources */,
 				04BAD7F02A2104D10062BA70 /* SceneDelegate.swift in Sources */,
+				04BAD8052A2105170062BA70 /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +378,7 @@
 		};
 		04BAD7FF2A2104D20062BA70 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E913D05175E871EE10318FC /* Pods-task-for-oson.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -310,6 +407,7 @@
 		};
 		04BAD8002A2104D20062BA70 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69AB6EB7DA24602D4C1238AD /* Pods-task-for-oson.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
